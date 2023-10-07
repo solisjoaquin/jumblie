@@ -1,638 +1,494 @@
 let wordList = [
-	{
-		theme: "ocean",
-		words: ["crab", "beach", "dolphin", "seahorse"],
-	},
-	{
-		theme: "forest",
-		words: ["bear", "trail", "hiking", "campfire"],
-	},
-	{
-		theme: "desert",
-		words: ["sand", "snake", "cactus", "drought"],
-	},
-	{
-		theme: "weather",
-		words: ["wind", "cloud", "sunny", "drizzle"],
-	},
-	{
-		theme: "school",
-		words: ["exam", "friend", "library", "homework"],
-	},
-	{
-		theme: "music",
-		words: ["bass", "tempo", "violin", "trombone"],
-	},
-	{
-		theme: "sports",
-		words: ["puck", "track", "lacrosse", "football"],
-	},
-	{
-		theme: "nature",
-		words: ["leaf", "ocean", "sunrise", "rainbow"],
-	},
-	{
-		theme: "farm",
-		words: ["bull", "horse", "tractor", "chicken"],
-	},
-	{
-		theme: "city",
-		words: ["tall", "noisy", "subway", "building"],
-	},
-	{
-		theme: "home",
-		words: ["yard", "couch", "kitchen", "bedroom"],
-	},
-	{
-		theme: "transportation",
-		words: ["bike", "train", "truck", "airplane"],
-	},
-	{
-		theme: "technology",
-		words: ["disk", "pixel", "iphone", "computer"],
-	},
-	{
-		theme: "science",
-		words: ["atom", "light", "gravity", "physics"],
-	},
-	{
-		theme: "kingdom",
-		words: ["flag", "crown", "invader", "warrior"],
-	},
-	{
-		theme: "earth",
-		words: ["land", "world", "ground", "culture"],
-	},
-	{
-		theme: "food",
-		words: ["soup", "fruit", "citrus", "lettuce"],
-	},
-	{
-		theme: "animals",
-		words: ["fish", "panda", "rabbit", "raccoon"],
-	},
-	{
-		theme: "plants",
-		words: ["bush", "petal", "needles", "pumpkin"],
-	},
-	{
-		theme: "health",
-		words: ["pill", "nurse", "doctor", "hospital"],
-	},
-	{
-		theme: "emotions",
-		words: ["pain", "anger", "lonely", "grateful"],
-	},
-	{
-		theme: "clothing",
-		words: ["vest", "shoes", "button", "sweater"],
-	},
-	{
-		theme: "jobs",
-		words: ["lift", "miner", "police", "plumber"],
-	},
-	{
-		theme: "finance",
-		words: ["loan", "price", "invest", "banking"],
-	},
-	{
-		theme: "architecture",
-		words: ["arch", "tower", "column", "stadium"],
-	},
-	{
-		theme: "professions",
-		words: ["cook", "nurse", "dentist", "surgeon"],
-	},
-	{
-		theme: "family",
-		words: ["aunt", "niece", "cousin", "grandma"],
-	},
-	{
-		theme: "generation",
-		words: ["mill", "alpha", "elder", "ancient"],
-	},
-	{
-		theme: "literature",
-		words: ["poem", "novel", "prose", "fiction"],
-	},
-	{
-		theme: "geography",
-		words: ["east", "ocean", "valley", "meadow"],
-	},
-	{
-		theme: "government",
-		words: ["bill", "mayor", "senate", "embassy"],
-	},
-	{
-		theme: "industry",
-		words: ["coal", "steel", "petrol", "factory"],
-	},
-	{
-		theme: "science fiction",
-		words: ["beam", "alien", "galaxy", "cyborg"],
-	},
-	{
-		theme: "philosophy",
-		words: ["ethic", "logic", "dilemma", "fallacy"],
-	},
-	{
-		theme: "arts",
-		words: ["play", "photo", "canvas", "gallery"],
-	},
-	{
-		theme: "warfare",
-		words: ["bomb", "rifle", "bunker", "barracks"],
-	},
-	{
-		theme: "crime",
-		words: ["theft", "fraud", "kidnap", "assault"],
-	},
-	{
-		theme: "justice",
-		words: ["fair", "truth", "innocent", "verdict"],
-	},
-	{
-		theme: "politics",
-		words: ["vote", "party", "debate", "congress"],
-	},
-	{
-		theme: "religion",
-		words: ["pray", "faith", "belief", "doctrine"],
-	},
-	{
-		theme: "mythology",
-		words: ["zeus", "athena", "olympus", "heracles"],
-	},
-	{
-		theme: "geology",
-		words: ["rock", "fault", "crystal", "mineral"],
-	},
-	{
-		theme: "astronomy",
-		words: ["mars", "venus", "saturn", "mercury"],
-	},
-	{
-		theme: "chemistry",
-		words: ["salt", "oxide", "enzyme", "protein"],
-	},
-	{
-		theme: "physics",
-		words: ["heat", "light", "plasma", "quantum"],
-	},
-	{
-		theme: "performing arts",
-		words: ["mime", "opera", "ballet", "orchestra"],
-	},
-	{
-		theme: "biology",
-		words: ["cell", "nerve", "organ", "neuron"],
-	},
-	{
-		theme: "mathematics",
-		words: ["sqrt", "angle", "vertex", "formula"],
-	},
-	{
-		theme: "engineering",
-		words: ["gear", "laser", "sensor", "battery"],
-	},
-	{
-		theme: "technology",
-		words: ["code", "pixel", "iphone", "computer"],
-	},
-	{
-		theme: "communication",
-		words: ["text", "email", "medium", "network"],
-	},
-	{
-		theme: "business",
-		words: ["sell", "stock", "invest", "startup"],
-	},
-	{
-		theme: "economics",
-		words: ["cash", "trade", "demand", "finance"],
-	},
-	{
-		theme: "education",
-		words: ["math", "class", "lesson", "campus"],
-	},
-	{
-		theme: "language",
-		words: ["word", "speak", "dialog", "grammar"],
-	},
-	{
-		theme: "literature",
-		words: ["poem", "prose", "novel", "trilogy"],
-	},
-	{
-		theme: "art",
-		words: ["paint", "sculpt", "exhibit", "gallery"],
-	},
-	{
-		theme: "music",
-		words: ["song", "chord", "rhythm", "concert"],
-	},
-	{
-		theme: "dance",
-		words: ["jazz", "swing", "tango", "ballet"],
-	},
-	{
-		theme: "theater",
-		words: ["play", "scene", "script", "musical"],
-	},
-	{
-		theme: "film",
-		words: ["reel", "start", "studio", "cinema"],
-	},
-	{
-		theme: "sports",
-		words: ["golf", "tennis", "racing", "cycling"],
-	},
-	{
-		theme: "news",
-		words: ["post", "times", "update", "journal"],
-	},
-	{
-		theme: "politics",
-		words: ["vote", "party", "debate", "congress"],
-	},
-	{
-		theme: "law",
-		words: ["suit", "crime", "lawyer", "prosecute"],
-	},
-	{
-		theme: "travel",
-		words: ["tour", "cruise", "vacation", "itinerary"],
-	},
-	{
-		theme: "flavor",
-		words: ["sour", "spicy", "savory", "delicious"],
-	},
-	{
-		theme: "cooking",
-		words: ["bake", "saute", "simmer", "barbecue"],
-	},
-	{
-		theme: "gardening",
-		words: ["soil", "prune", "flower", "harvest"],
-	},
-	{
-		theme: "pets",
-		words: ["fish", "kitten", "gerbil", "goldfish"],
-	},
-	{
-		theme: "parenting",
-		words: ["crib", "sleep", "diaper", "toddler"],
-	},
-	{
-		theme: "fitness",
-		words: ["reps", "sweat", "jogging", "spinning"],
-	},
-	{
-		theme: "beauty",
-		words: ["nail", "liner", "lipstick", "mascara"],
-	},
-	{
-		theme: "fashion",
-		words: ["mood", "style", "vintage", "pattern"],
-	},
-	{
-		theme: "home",
-		words: ["sofa", "curtain", "cabinet", "bedroom"],
-	},
-	{
-		theme: "interior design",
-		words: ["lamp", "decor", "layout", "furnish"],
-	},
-	{
-		theme: "vehicles",
-		words: ["tire", "brake", "engine", "dashboard"],
-	},
-	{
-		theme: "hobbies",
-		words: ["yarn", "quilt", "puzzle", "origami"],
-	},
-	{
-		theme: "crafts",
-		words: ["glue", "beads", "knitting", "crochet"],
-	},
-	{
-		theme: "games",
-		words: ["dice", "chess", "sudoku", "jumblie"],
-	},
-	{
-		theme: "comedy",
-		words: ["joke", "sketch", "roast", "improvise"],
-	},
-	{
-		theme: "adventure",
-		words: ["raft", "climb", "bungee", "zipline"],
-	},
-	{
-		theme: "nature",
-		words: ["tree", "fern", "forest", "meadow"],
-	},
-	{
-		theme: "psychology",
-		words: ["self", "anger", "mental", "therapy"],
-	},
-	{
-		theme: "philosophy",
-		words: ["idea", "logic", "mindset", "dilemma"],
-	},
-	{
-		theme: "photography",
-		words: ["zoom", "focus", "vignette", "landscape"],
-	},
-	{
-		theme: "horror",
-		words: ["fear", "nightmare", "vampire", "monster"],
-	},
-	{
-		theme: "fantasy",
-		words: ["myth", "magic", "castle", "dragon"],
-	},
-	{
-		theme: "action",
-		words: ["hack", "fight", "battle", "showdown"],
-	},
-	{
-		theme: "mythology",
-		words: ["lore", "fairy", "legend", "olympus"],
-	},
-	{
-		theme: "exploration",
-		words: ["seek", "atlas", "compass", "pioneer"],
-	},
-	{
-		theme: "mystery",
-		words: ["clue", "alibi", "motive", "suspect"],
-	},
-	{
-		theme: "supernatural",
-		words: ["lurk", "ghost", "spooky", "psychic"],
-	},
-	{
-		theme: "spy",
-		words: ["mole", "secret", "covert", "mission"],
-	},
-	{
-		theme: "old western movies",
-		words: ["town", "cowboy", "desert", "frontier"],
-	},
-	{
-		theme: "pets",
-		words: ["fish", "puppy", "kitten", "hamster"],
-	},
-	{
-		theme: "war",
-		words: ["army", "fight", "combat", "strategy"],
-	},
-	{
-		theme: "history",
-		words: ["past", "ancient", "relic", "artifact"],
-	},
-	{
-		theme: "biography",
-		words: ["life", "story", "memoir", "legacy"],
-	},
-	{
-		theme: "travel",
-		words: ["trip", "route", "voyage", "tourist"],
-	},
-	{
-		theme: "weather",
-		words: ["rain", "cloud", "breezy", "thunder"],
-	},
-	{
-		theme: "animals",
-		words: ["bird", "hippo", "reptile", "elephant"],
-	},
-	{
-		theme: "farming",
-		words: ["crop", "barn", "harvest", "tractor"],
-	},
-	{
-		theme: "cooking",
-		words: ["bake", "broil", "saute", "skillet"],
-	},
-	{
-		theme: "fitness",
-		words: ["yoga", "shape", "health", "cardio"],
-	},
-	{
-		theme: "sports",
-		words: ["team", "match", "score", "champion"],
-	},
-	{
-		theme: "art",
-		words: ["draw", "paint", "sculpt", "museum"],
-	},
-	{
-		theme: "photography",
-		words: ["lens", "thirds", "camera", "portrait"],
-	},
-	{
-		theme: "dance",
-		words: ["jazz", "salsa", "swing", "toxtrot"],
-	},
-	{
-		theme: "music",
-		words: ["note", "rhythm", "treble", "harmony"],
-	},
-	{
-		theme: "theater",
-		words: ["play", "script", "scene", "audition"],
-	},
-	{
-		theme: "literature",
-		words: ["book", "author", "poetry", "fiction"],
-	},
-	{
-		theme: "comics",
-		words: ["joke", "humor", "manga", "cartoon"],
-	},
-	{
-		theme: "film",
-		words: ["movie", "cinema", "actor", "studio"],
-	},
-	{
-		theme: "television",
-		words: ["show", "episode", "series", "sitcom"],
-	},
-	{
-		theme: "games",
-		words: ["play", "level", "score", "player"],
-	},
-	{
-		theme: "toys",
-		words: ["doll", "teddy", "block", "football"],
-	},
-	{
-		theme: "circus",
-		words: ["show", "clown", "juggle", "trapeze"],
-	},
-	{
-		theme: "magic",
-		words: ["wand", "spell", "potion", "wizard"],
-	},
-	{
-		theme: "space",
-		words: ["star", "void", "galaxy", "oxygen"],
-	},
-	{
-		theme: "internet",
-		words: ["blog", "email", "search", "browser"],
-	},
-	{
-		theme: "mathematics",
-		words: ["work", "graph", "proof", "subtract"],
-	},
-	{
-		theme: "sailing",
-		words: ["ship", "knot", "mast", "starboard"],
-	},
-	{
-		theme: "aviation",
-		words: ["jets", "pilot", "flight", "runway"],
-	},
-	{
-		theme: "money",
-		words: ["cash", "debt", "loan", "finance"],
-	},
-	{
-		theme: "shopping",
-		words: ["mall", "sales", "outlet", "thrift"],
-	},
-	{
-		theme: "economics and finance",
-		words: ["save", "trade", "demand", "capital"],
-	},
-	{
-		theme: "education",
-		words: ["exam", "learn", "degree", "teacher"],
-	},
-	{
-		theme: "mythology",
-		words: ["tale", "fable", "legend", "parable"],
-	},
-	{
-		theme: "justice",
-		words: ["seek", "court", "lawyer", "verdict"],
-	},
-	{
-		theme: "espionage",
-		words: ["cover", "agent", "secret", "informer"],
-	},
-	{
-		theme: "fashion",
-		words: ["garb", "trend", "couture", "vintage"],
-	},
-	{
-		theme: "design",
-		words: ["form", "taste", "beauty", "graphic"],
-	},
-	{
-		theme: "architecture",
-		words: ["plan", "tower", "design", "building"],
-	},
-	{
-		theme: "crafts",
-		words: ["knit", "draw", "crayon", "ceramic"],
-	},
-	{
-		theme: "space",
-		words: ["mars", "comet", "nebula", "jupiter"],
-	},
-	{
-		theme: "jewelry",
-		words: ["opal", "pearl", "earring", "brooch"],
-	},
-	{
-		theme: "ceramics",
-		words: ["kiln", "glaze", "pottery", "porcelain"],
-	},
-	{
-		theme: "woodworking",
-		words: ["mill", "lathe", "drill", "chisel"],
-	},
-	{
-		theme: "cooking",
-		words: ["bake", "broil", "recipe", "concoct"],
-	},
-	{
-		theme: "baking",
-		words: ["oven", "yeast", "flour", "pastry"],
-	},
-	{
-		theme: "relationships",
-		words: ["love", "trust", "close", "friend"],
-	},
-	{
-		theme: "generations",
-		words: ["ages", "elders", "legacy", "descend"],
-	},
-	{
-		theme: "aging",
-		words: ["wise", "mature", "senior", "wrinkle"],
-	},
-	{
-		theme: "home",
-		words: ["cozy", "abode", "reside", "connect"],
-	},
-	{
-		theme: "birthday",
-		words: ["cake", "party", "candle", "surprise"],
-	},
-	{
-		theme: "boating",
-		words: ["sail", "yacht", "vessel", "regatta"],
-	},
-	{
-		theme: "locomotive",
-		words: ["rail", "train", "caboose", "conductor"],
-	},
-	{
-		theme: "invention",
-		words: ["make", "start", "patent", "prototype"],
-	},
-	{
-		theme: "energy",
-		words: ["push", "green", "solar", "generate"],
-	},
-	{
-		theme: "recycling",
-		words: ["save", "reuse", "waste", "plastic"],
-	},
-	{
-		theme: "ecology",
-		words: ["tree", "habitat", "nature", "conserve"],
-	},
-	{
-		theme: "volcano",
-		words: ["lava", "magma", "eruption", "crater"],
-	},
-	{
-		theme: "rescue",
-		words: ["save", "float", "revive", "recover"],
-	},
-	{
-		theme: "security",
-		words: ["safe", "guard", "protect", "surveil"],
-	},
-	{
-		theme: "survival",
-		words: ["pack", "forage", "endure", "shelter"],
-	},
-	{
-		theme: "investing",
-		words: ["fund", "asset", "spend", "dividend"],
-	},
-	{
-		theme: "banking",
-		words: ["loan", "money", "credit", "mortgage"],
-	},
-	{
-		theme: "trade",
-		words: ["card", "retail", "import", "passage"],
-	},
+  {
+    theme: "océano",
+    words: ["cangrejo", "playa", "delfín", "caballito de mar"],
+  },
+  {
+    theme: "bosque",
+    words: ["oso", "sendero", "excursionismo", "fogata"],
+  },
+  {
+    theme: "desierto",
+    words: ["arena", "serpiente", "cactus", "sequía"],
+  },
+  {
+    theme: "clima",
+    words: ["viento", "nube", "soleado", "llovizna"],
+  },
+  {
+    theme: "escuela",
+    words: ["examen", "amigo", "biblioteca", "tarea"],
+  },
+  {
+    theme: "música",
+    words: ["bajo", "tempo", "violín", "trombón"],
+  },
+  {
+    theme: "deportes",
+    words: ["disco", "pista", "lacrosse", "fútbol"],
+  },
+  {
+    theme: "naturaleza",
+    words: ["hoja", "océano", "amanecer", "arcoíris"],
+  },
+  {
+    theme: "granja",
+    words: ["toro", "caballo", "tractor", "pollo"],
+  },
+  {
+    theme: "ciudad",
+    words: ["alto", "ruidoso", "metro", "edificio"],
+  },
+  {
+    theme: "hogar",
+    words: ["patio", "sofá", "cocina", "dormitorio"],
+  },
+  {
+    theme: "transporte",
+    words: ["bicicleta", "tren", "camión", "avión"],
+  },
+  {
+    theme: "tecnología",
+    words: ["disco", "píxel", "iPhone", "computadora"],
+  },
+  {
+    theme: "ciencia",
+    words: ["átomo", "luz", "gravedad", "física"],
+  },
+  {
+    theme: "reino",
+    words: ["bandera", "corona", "invasor", "guerrero"],
+  },
+  {
+    theme: "tierra",
+    words: ["tierra", "mundo", "suelo", "cultura"],
+  },
+  {
+    theme: "comida",
+    words: ["sopa", "fruta", "cítricos", "lechuga"],
+  },
+  {
+    theme: "animales",
+    words: ["pez", "panda", "conejo", "mapache"],
+  },
+  {
+    theme: "plantas",
+    words: ["arbusto", "pétalo", "agujas", "calabaza"],
+  },
+  {
+    theme: "salud",
+    words: ["pastilla", "enfermera", "doctor", "hospital"],
+  },
+  {
+    theme: "emociones",
+    words: ["dolor", "enojo", "soledad", "agradecido"],
+  },
+  {
+    theme: "ropa",
+    words: ["chaleco", "zapatos", "botón", "sweater"],
+  },
+  {
+    theme: "trabajos",
+    words: ["ascensor", "minero", "policía", "fontanero"],
+  },
+  {
+    theme: "finanzas",
+    words: ["préstamo", "precio", "inversión", "banca"],
+  },
+  {
+    theme: "arquitectura",
+    words: ["arco", "torre", "columna", "estadio"],
+  },
+  {
+    theme: "profesiones",
+    words: ["cocinero", "enfermera", "dentista", "cirujano"],
+  },
+  {
+    theme: "familia",
+    words: ["tía", "sobrina", "prima", "abuela"],
+  },
+  {
+    theme: "generación",
+    words: ["molinillo", "alfa", "anciano", "antiguo"],
+  },
+  {
+    theme: "literatura",
+    words: ["poema", "novela", "prosa", "ficción"],
+  },
+  {
+    theme: "geografía",
+    words: ["este", "océano", "valle", "prado"],
+  },
+  {
+    theme: "gobierno",
+    words: ["billete", "alcalde", "senado", "embajada"],
+  },
+  {
+    theme: "industria",
+    words: ["carbón", "acero", "petróleo", "fábrica"],
+  },
+  {
+    theme: "ciencia ficción",
+    words: ["rayo", "extraterrestre", "galaxia", "cíborg"],
+  },
+  {
+    theme: "filosofía",
+    words: ["ética", "lógica", "dilema", "falacia"],
+  },
+  {
+    theme: "artes",
+    words: ["obra de teatro", "foto", "lienzo", "galería"],
+  },
+  {
+    theme: "guerra",
+    words: ["bomba", "rifle", "bunker", "cuartel"],
+  },
+  {
+    theme: "crimen",
+    words: ["robo", "fraude", "secuestro", "agresión"],
+  },
+  {
+    theme: "justicia",
+    words: ["justo", "verdad", "inocente", "veredicto"],
+  },
+  {
+    theme: "política",
+    words: ["voto", "partido", "debate", "congreso"],
+  },
+  {
+    theme: "religión",
+    words: ["rezar", "fe", "creencia", "doctrina"],
+  },
+  {
+    theme: "mitología",
+    words: ["Zeus", "Atenea", "Olimpo", "Hércules"],
+  },
+  {
+    theme: "geología",
+    words: ["roca", "falla", "cristal", "mineral"],
+  },
+  {
+    theme: "astronomía",
+    words: ["Marte", "Venus", "Saturno", "Mercurio"],
+  },
+  {
+    theme: "química",
+    words: ["sal", "óxido", "enzima", "proteína"],
+  },
+  {
+    theme: "física",
+    words: ["calor", "luz", "plasma", "cuántico"],
+  },
+  {
+    theme: "artes escénicas",
+    words: ["mimo", "ópera", "ballet", "orquesta"],
+  },
+  {
+    theme: "biología",
+    words: ["célula", "nervio", "órgano", "neurona"],
+  },
+  {
+    theme: "matemáticas",
+    words: ["raíz cuadrada", "ángulo", "vértice", "fórmula"],
+  },
+  {
+    theme: "ingeniería",
+    words: ["engranaje", "láser", "sensor", "batería"],
+  },
+  {
+    theme: "tecnología",
+    words: ["código", "píxel", "iPhone", "computadora"],
+  },
+  {
+    theme: "comunicación",
+    words: ["texto", "correo electrónico", "medio", "red"],
+  },
+  {
+    theme: "negocios",
+    words: ["vender", "acciones", "inversión", "startup"],
+  },
+  {
+    theme: "economía",
+    words: ["dinero en efectivo", "comercio", "demanda", "finanzas"],
+  },
+  {
+    theme: "educación",
+    words: ["matemáticas", "clase", "lección", "campus"],
+  },
+  {
+    theme: "lenguaje",
+    words: ["palabra", "hablar", "diálogo", "gramática"],
+  },
+  {
+    theme: "literatura",
+    words: ["poema", "prosa", "novela", "trilogía"],
+  },
+  {
+    theme: "arte",
+    words: ["pintar", "esculpir", "exponer", "museo"],
+  },
+  {
+    theme: "música",
+    words: ["canción", "acorde", "ritmo", "concierto"],
+  },
+  {
+    theme: "baile",
+    words: ["jazz", "swing", "tango", "ballet"],
+  },
+  {
+    theme: "teatro",
+    words: ["obra de teatro", "escena", "guion", "musical"],
+  },
+  {
+    theme: "cine",
+    words: ["bobina", "inicio", "estudio", "cine"],
+  },
+  {
+    theme: "deportes",
+    words: ["golf", "tenis", "carrera", "ciclismo"],
+  },
+  {
+    theme: "noticias",
+    words: ["publicación", "periódico", "actualización", "diario"],
+  },
+  {
+    theme: "política",
+    words: ["voto", "partido", "debate", "congreso"],
+  },
+  {
+    theme: "ley",
+    words: ["traje", "crimen", "abogado", "procesar"],
+  },
+  {
+    theme: "viaje",
+    words: ["tour", "crucero", "vacaciones", "itinerario"],
+  },
+  {
+    theme: "sabor",
+    words: ["agrio", "picante", "sabroso", "delicioso"],
+  },
+  {
+    theme: "cocina",
+    words: ["hornear", "saltear", "cocinar a fuego lento", "barbacoa"],
+  },
+  {
+    theme: "jardinería",
+    words: ["suelo", "podar", "flor", "cosechar"],
+  },
+  {
+    theme: "mascotas",
+    words: ["pez", "gatito", "jerbo", "pez dorado"],
+  },
+  {
+    theme: "crianza",
+    words: ["cuna", "sueño", "pañal", "niño pequeño"],
+  },
+  {
+    theme: "fitness",
+    words: ["repeticiones", "sudor", "jogging", "spinning"],
+  },
+  {
+    theme: "belleza",
+    words: ["uña", "delineador", "labial", "máscara"],
+  },
+  {
+    theme: "moda",
+    words: ["estado de ánimo", "estilo", "vintage", "patrón"],
+  },
+  {
+    theme: "hogar",
+    words: ["sofá", "cortina", "gabinete", "dormitorio"],
+  },
+  {
+    theme: "diseño de interiores",
+    words: ["lámpara", "decoración", "diseño", "amueblar"],
+  },
+  {
+    theme: "vehículos",
+    words: ["neumático", "freno", "motor", "tablero"],
+  },
+  {
+    theme: "pasatiempos",
+    words: ["lana", "edredón", "rompecabezas", "origami"],
+  },
+  {
+    theme: "manualidades",
+    words: ["pegamento", "cuentas", "tejer", "ganchillo"],
+  },
+  {
+    theme: "juegos",
+    words: ["dados", "ajedrez", "sudoku", "jumblie"],
+  },
+  {
+    theme: "comedia",
+    words: ["chiste", "boceto", "asado", "improvisar"],
+  },
+  {
+    theme: "aventura",
+    words: ["balsa", "trepar", "bungee", "tirolina"],
+  },
+  {
+    theme: "naturaleza",
+    words: ["árbol", "helecho", "bosque", "prado"],
+  },
+  {
+    theme: "psicología",
+    words: ["yo", "enojo", "mental", "terapia"],
+  },
+  {
+    theme: "filosofía",
+    words: ["idea", "lógica", "mentalidad", "dilema"],
+  },
+  {
+    theme: "fotografía",
+    words: ["zoom", "enfoque", "viñeta", "paisaje"],
+  },
+  {
+    theme: "terror",
+    words: ["miedo", "pesadilla", "vampiro", "monstruo"],
+  },
+  {
+    theme: "fantasía",
+    words: ["mito", "magia", "castillo", "dragón"],
+  },
+  {
+    theme: "acción",
+    words: ["piratear", "pelear", "batalla", "duelo"],
+  },
+  {
+    theme: "mitología",
+    words: ["lore", "hada", "leyenda", "Olimpo"],
+  },
+  {
+    theme: "exploración",
+    words: ["buscar", "atlas", "brújula", "pionero"],
+  },
+  {
+    theme: "misterio",
+    words: ["pista", "coartada", "motivo", "sospechoso"],
+  },
+  {
+    theme: "sobrenatural",
+    words: ["acechar", "fantasma", "espeluznante", "psíquico"],
+  },
+  {
+    theme: "espía",
+    words: ["topo", "secreto", "encubierto", "misión"],
+  },
+  {
+    theme: "películas del viejo oeste",
+    words: ["pueblo", "vaquero", "desierto", "frontera"],
+  },
+  {
+    theme: "mascotas",
+    words: ["pez", "cachorro", "gatito", "hámster"],
+  },
+  {
+    theme: "guerra",
+    words: ["ejército", "lucha", "combate", "estrategia"],
+  },
+  {
+    theme: "historia",
+    words: ["pasado", "antiguo", "reliquia", "artefacto"],
+  },
+  {
+    theme: "biografía",
+    words: ["vida", "historia", "memorias", "legado"],
+  },
+  {
+    theme: "viajar",
+    words: ["viaje", "ruta", "viaje", "turista"],
+  },
+  {
+    theme: "clima",
+    words: ["lluvia", "nube", "ventoso", "trueno"],
+  },
+  {
+    theme: "animales",
+    words: ["ave", "hipopótamo", "reptil", "elefante"],
+  },
+  {
+    theme: "agricultura",
+    words: ["cultivo", "granero", "cosecha", "tractor"],
+  },
+  {
+    theme: "cocina",
+    words: ["hornear", "asar", "receta", "concoctar"],
+  },
+  {
+    theme: "horneado",
+    words: ["horno", "levadura", "harina", "pastelería"],
+  },
+  {
+    theme: "relaciones",
+    words: ["amor", "confianza", "cercanía", "amigo"],
+  },
+  {
+    theme: "generaciones",
+    words: ["edades", "ancianos", "legado", "descender"],
+  },
+  {
+    theme: "envejecimiento",
+    words: ["sabio", "maduro", "senior", "arruga"],
+  },
+  {
+    theme: "hogar",
+    words: ["acogedor", "morada", "residir", "conectar"],
+  },
+  {
+    theme: "cumpleaños",
+    words: ["pastel", "fiesta", "vela", "sorpresa"],
+  },
+  {
+    theme: "navegación",
+    words: ["navegar", "yate", "barco", "regata"],
+  },
+  {
+    theme: "locomoción",
+    words: ["ferrocarril", "tren", "vagón de cola", "conductor"],
+  },
+  {
+    theme: "invento",
+    words: ["hacer", "comenzar", "patente", "prototipo"],
+  },
+  {
+    theme: "energía",
+    words: ["empujar", "verde", "solar", "generar"],
+  },
+  {
+    theme: "reciclaje",
+    words: ["ahorrar", "reutilizar", "desperdicio", "plástico"],
+  },
+  {
+    theme: "ecología",
+    words: ["árbol", "hábitat", "naturaleza", "conservar"],
+  },
+  {
+    theme: "volcán",
+    words: ["lava", "magma", "erupción", "cráter"],
+  },
+  {
+    theme: "rescate",
+    words: ["salvar", "flotar", "revivir", "recuperar"],
+  },
+  {
+    theme: "seguridad",
+    words: ["seguro", "guardia", "proteger", "vigilar"],
+  },
+  {
+    theme: "supervivencia",
+    words: ["empaque", "forraje", "soportar", "refugio"],
+  },
+  {
+    theme: "inversión",
+    words: ["fondo", "activo", "gasto", "dividendo"],
+  },
+  {
+    theme: "banca",
+    words: ["préstamo", "dinero", "crédito", "hipoteca"],
+  },
+  {
+    theme: "comercio",
+    words: ["tarjeta", "venta al por menor", "importación", "paso"],
+  },
 ];
